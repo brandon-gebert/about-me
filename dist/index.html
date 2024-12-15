@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="font-inter bg-white dark:bg-black">
+<html class="font-inter bg-zinc-100 dark:bg-zinc-950">
   <head>
     <title>Brandon Gebert</title>
     <meta charset="UTF-8" />
@@ -7,7 +7,387 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
 
-  <body>
-    <div></div>
+  <body class="h-screen w-full">
+    <div class="h-full w-full">
+      <!-- Start of Navigation Bar -->
+      <nav
+        class="fixed z-10 flex h-[3.125rem] w-full items-center justify-center bg-zinc-100 dark:bg-zinc-950"
+      >
+        <div
+          class="mx-5 flex h-full w-full items-center justify-between sm:max-w-[68rem]"
+        >
+          <a
+            href="https://brandon-gebert.github.io/about-me/dist/index.html"
+            class="flex items-center justify-center"
+          >
+            <p
+              class="inline-flex items-center gap-x-1.5 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 px-2.5 py-1.5 text-xs font-medium text-white"
+            >
+              Brandon Gebert
+            </p>
+          </a>
+          <ul
+            class="hidden flex-row items-center justify-center gap-x-10 md:flex"
+          >
+            <!-- Skills -->
+            <a href="https://photexai.com/articore"
+              ><li class="text-[.8425rem] font-semibold text-white">
+                Skills
+              </li></a
+            >
+            <!-- Case Study -->
+            <a href="https://photexai.com/about"
+              ><li class="text-[.8425rem] font-semibold text-white">
+                Case Study
+              </li></a
+            >
+            <!-- Resume -->
+            <a href="https://photexai.com/blog"
+              ><li class="text-[.8425rem] font-semibold text-white">
+                Resume
+              </li></a
+            >
+          </ul>
+          <div class="flex md:hidden">
+            <button class="open-mobile-navbar-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 text-black dark:text-white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden items-center md:flex">
+            <button
+              class="inline-flex items-center gap-x-1.5 rounded-full bg-black bg-gradient-to-r px-2.5 py-1.5 text-xs font-medium text-white dark:bg-white dark:text-black"
+            >
+              Contact Me
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- End of Navigation Bar -->
+      <!-- ***** -->
+      <!-- Start of Main Section -->
+      <main class="flex h-auto w-full flex-col items-center px-5 py-[3.125rem]">
+        <!-- Start of Hero Section -->
+        <section
+          class="my-12 flex h-[32rem] w-full flex-col items-center justify-center gap-y-8 rounded-xl bg-white p-10 sm:max-w-[68rem] dark:bg-zinc-900"
+        >
+          <img
+            src="/assets/profile-picture.JPG"
+            class="size-24 rounded-full object-cover"
+          />
+          <h1
+            class="w-full text-center text-4xl text-black sm:w-4/6 dark:text-white"
+          >
+            Building beautiful things for the web.
+          </h1>
+          <p
+            class="text-normal w-full text-center text-black sm:w-4/6 dark:text-white"
+          >
+            I’m an aspiring front-end developer passionate about creating
+            intuitive and appealing user experiences. Based in Fort Myers, FL,
+            I’m honing my skills in HTML, CSS, JavaScript, and React as I go on
+            an exciting journey into web development.
+          </p>
+        </section>
+        <!-- End of Hero Section -->
+        <!-- ***** -->
+        <!-- Start of Skills Section -->
+        <section
+          class="my-12 flex h-[20rem] w-full shrink-0 grow-0 items-center justify-center sm:h-[20rem] sm:max-w-[68rem] xl:h-[24rem] xl:px-0 2xl:h-[28rem]"
+        >
+          <div class="flex h-full w-full flex-col gap-x-4">
+            <!-- Carousel Header -->
+            <div
+              class="mb-10 flex h-10 w-full flex-row items-center justify-between"
+            >
+              <h1
+                class="text-2xl font-medium tracking-tight text-black dark:text-white"
+              >
+                Skills
+              </h1>
+              <div
+                class="hidden flex-row items-center justify-center gap-x-4 sm:hidden md:flex"
+              >
+                <button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="scroll-up-button size-6 text-black dark:text-white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 19.5 8.25 12l7.5-7.5"
+                    />
+                  </svg>
+                </button>
+                <button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="scroll-down-button size-6 text-black dark:text-white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!-- Carousel Body -->
+            <div
+              class="hide-scrollbar flex h-full w-full shrink-0 grow-0 flex-row gap-x-5 overflow-x-scroll"
+            >
+              <!-- HTML -->
+              <div
+                title="HTML"
+                class="flex h-full w-[286px] shrink-0 grow-0 flex-col items-center justify-center rounded-lg bg-[#E34F26] sm:w-[286px] md:w-[calc(33.333%-1rem)]"
+              >
+                <svg
+                  class="size-24 text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="m3 2 1.578 17.824L12 22l7.467-2.175L21 2H3Zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565-4.246 1.381-4.281-1.455-.288-2.932h2.024l.16 1.411 2.4.815 2.346-.763.297-3.005H7.416l-.562-6.05h10.412l-.217 2.017Z"
+                  />
+                </svg>
+              </div>
+              <!-- CSS -->
+              <div
+                title="CSS"
+                class="flex h-full w-[286px] shrink-0 grow-0 flex-col items-center justify-center rounded-lg bg-[#1572B6] sm:w-[286px] md:w-[calc(33.333%-1rem)]"
+              >
+                <svg
+                  class="size-24 text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="m3 2 1.578 17.834L12 22l7.468-2.165L21 2H3Zm13.3 14.722-4.293 1.204H12l-4.297-1.204-.297-3.167h2.108l.15 1.526 2.335.639 2.34-.64.245-3.05h-7.27l-.187-2.006h7.64l.174-2.006H6.924l-.176-2.006h10.506l-.954 10.71Z"
+                  />
+                </svg>
+              </div>
+              <!-- JS -->
+              <div
+                title="JavaScript"
+                class="flex h-full w-[286px] shrink-0 grow-0 flex-col items-center justify-center rounded-lg bg-[#F7DF1E] sm:w-[286px] md:w-[calc(33.333%-1rem)]"
+              >
+                <svg
+                  class="size-24 text-black"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M15 0H0V15H15V0ZM8 8C8 6.89543 8.89543 6 10 6H11.1667C12.1792 6 13 6.82081 13 7.83333V8H12V7.83333C12 7.3731 11.6269 7 11.1667 7H10C9.44772 7 9 7.44772 9 8C9 8.55228 9.44772 9 10 9H11C12.1046 9 13 9.89543 13 11C13 12.1046 12.1046 13 11 13H10C8.89543 13 8 12.1046 8 11H9C9 11.5523 9.44772 12 10 12H11C11.5523 12 12 11.5523 12 11C12 10.4477 11.5523 10 11 10H10C8.89543 10 8 9.10457 8 8ZM6 6V11C6 11.5523 5.55228 12 5 12C4.44772 12 4 11.5523 4 11H3C3 12.1046 3.89543 13 5 13C6.10457 13 7 12.1046 7 11V6H6Z"
+                    fill="#000000"
+                  />
+                </svg>
+              </div>
+              <!-- GitHub -->
+              <div
+                title="GitHub"
+                class="flex h-full w-[286px] shrink-0 grow-0 flex-col items-center justify-center rounded-lg bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] sm:w-[286px] md:w-[calc(33.333%-1rem)]"
+              >
+                <svg
+                  class="size-24 text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <!-- VSCode -->
+              <div
+                title="Visual Studio Code"
+                class="flex h-full w-[286px] shrink-0 grow-0 flex-col items-center justify-center rounded-lg bg-gradient-to-r from-[#0065A9] to-[#007ACC] sm:w-[286px] md:w-[calc(33.333%-1rem)]"
+              >
+                <svg
+                  class="size-24 text-white"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke="#f7f7f7"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M0.228341 8.36915C0.228341 8.36915 -0.356212 7.94324 0.345251 7.37453L1.97956 5.89736C1.97956 5.89736 2.44721 5.40004 2.94164 5.83334L18.0231 17.375V22.9094C18.0231 22.9094 18.0158 23.7785 16.9124 23.6825L0.228341 8.36915Z"
+                      fill="#ffffff"
+                    />
+                    <path
+                      d="M4.11555 11.9367L0.228273 15.5089C0.228273 15.5089 -0.171172 15.8093 0.228273 16.346L2.03308 18.0053C2.03308 18.0053 2.46175 18.4706 3.09502 17.9413L7.21611 14.7827L4.11555 11.9367Z"
+                      fill="#ffffff"
+                    />
+                    <path
+                      d="M10.94 11.9661L18.0691 6.46362L18.0228 0.95865C18.0228 0.95865 17.7183 -0.242793 16.7027 0.382548L7.21589 9.11025L10.94 11.9661Z"
+                      fill="#ffffff"
+                    />
+                    <path
+                      d="M16.9121 23.69C17.3261 24.1183 17.8279 23.978 17.8279 23.978L23.3838 21.2108C24.0951 20.7208 23.9952 20.1127 23.9952 20.1127V3.58803C23.9952 2.86175 23.2596 2.61063 23.2596 2.61063L18.4441 0.264377C17.3919 -0.392968 16.7027 0.382548 16.7027 0.382548C16.7027 0.382548 17.5892 -0.262484 18.0228 0.95865L18.0228 22.8086C18.0228 22.9588 17.9911 23.1065 17.9278 23.2394C17.8011 23.4979 17.5259 23.7392 16.8658 23.6383L16.9121 23.69Z"
+                      fill="#ffffff"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End of Skills Section -->
+        <!-- ***** -->
+        <!-- Start of Portfolio Section-->
+        <section
+          class="my-24 flex h-[24rem] w-full shrink-0 grow-0 items-center justify-center sm:max-w-[68rem] xl:px-0 2xl:h-[32rem]"
+        >
+          <div class="flex h-full w-full flex-col gap-x-4">
+            <!-- Carousel Header -->
+            <div
+              class="mb-10 flex h-10 w-full flex-row items-center justify-between"
+            >
+              <h1
+                class="text-2xl font-medium tracking-tight text-black dark:text-white"
+              >
+                Case Study
+              </h1>
+            </div>
+            <!-- Carousel Body -->
+            <div
+              class="hide-scrollbar flex h-full w-full shrink-0 grow-0 flex-row gap-x-5 overflow-x-scroll"
+            >
+              <!-- HTML -->
+              <div
+                title="HTML"
+                class="flex h-full w-full shrink-0 grow-0 flex-col items-center justify-center rounded-lg bg-[#1daea4]"
+              >
+                <svg
+                  class="size-24 text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="m3 2 1.578 17.824L12 22l7.467-2.175L21 2H3Zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565-4.246 1.381-4.281-1.455-.288-2.932h2.024l.16 1.411 2.4.815 2.346-.763.297-3.005H7.416l-.562-6.05h10.412l-.217 2.017Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End of Portfolio Section -->
+        <!-- ***** -->
+        <!-- Start of Resume Section -->
+        <section
+          class="my-12 flex h-[32rem] w-full flex-col items-center justify-center gap-y-8 rounded-xl bg-white p-10 sm:max-w-[68rem] dark:bg-zinc-900"
+        >
+          <h1
+            class="w-full text-center text-4xl text-black sm:w-4/6 sm:text-6xl dark:text-white"
+          >
+            My professional history
+          </h1>
+          <button
+            class="flex items-center justify-center rounded-full bg-black px-5 py-3 text-sm font-medium tracking-tight text-white hover:bg-gray-300 dark:bg-white dark:text-black"
+          >
+            View Resume
+          </button>
+        </section>
+        <!-- End of Resume Section -->
+      </main>
+      <!-- End of Main Section -->
+      <!-- ***** -->
+      <!-- Start of Footer Section -->
+      <footer
+        class="z-10 flex h-[3.125rem] w-full items-center justify-center bg-zinc-100 dark:bg-zinc-950"
+      >
+        <div
+          class="mx-5 flex h-full w-full items-center justify-center sm:max-w-[68rem]"
+        >
+          <a
+            href="https://brandon-gebert.github.io/about-me/dist/index.html"
+            class="flex items-center justify-center"
+          >
+            <p class="text-sm text-black dark:text-white">
+              2024 Brandon Gebert. All Rights Reserved.
+            </p>
+          </a>
+        </div>
+      </footer>
+      <!-- End of Footer Section -->
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousels = document.querySelectorAll(".overflow-x-scroll");
+        carousels.forEach((carousel) => {
+          const scrollUpButton = carousel
+            .closest("section")
+            .querySelector(".scroll-up-button");
+          const scrollDownButton = carousel
+            .closest("section")
+            .querySelector(".scroll-down-button");
+
+          if (scrollUpButton && scrollDownButton) {
+            scrollUpButton.addEventListener("click", () => {
+              carousel.scrollBy({
+                left: -500, // adjust this value as needed
+                behavior: "smooth",
+              });
+            });
+
+            scrollDownButton.addEventListener("click", () => {
+              carousel.scrollBy({
+                left: 500, // adjust this value as needed
+                behavior: "smooth",
+              });
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>
