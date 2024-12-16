@@ -6,16 +6,6 @@
   viewBox="0 0 24 24"
   fill="#FFFFFF"
 >
-  <style>
-    path {
-      fill: white;
-    }
-    @media (prefers-color-scheme: dark) {
-      path {
-        fill: white;
-      }
-    }
-  </style>
   <path
     fill-rule="evenodd"
     clip-rule="evenodd"
