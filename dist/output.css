@@ -1126,6 +1126,10 @@ video {
   --tw-gradient-to: #9089fc var(--tw-gradient-to-position);
 }
 
+.fill-white{
+  fill: #fff;
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -1477,6 +1481,11 @@ video {
 .hover\:bg-zinc-700:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-zinc-200:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 228 231 / var(--tw-bg-opacity, 1));
 }
 
 .focus\:outline:focus{
