@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="bg-zinc-100 font-inter dark:bg-zinc-950">
   <head>
-    <title>Case Study #1 - Build.com</title>
+    <title>Case Study - OpenRouter UI Redesign</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
@@ -18,7 +18,7 @@
         >
           <!-- Logo -->
           <a
-            href="https://brandon-gebert.github.io/about-me/dist/index.html"
+            href="https://brandon-gebert.github.io/about-me/index.html"
             class="flex items-center justify-center"
           >
             <p
@@ -80,7 +80,7 @@
           </div>
           <div class="items-center hidden md:flex">
             <button
-              onclick="window.location.href='https://brandon-gebert.github.io/about-me/dist/contact.html';"
+              onclick="window.location.href='https://brandon-gebert.github.io/about-me/contact.html';"
               class="inline-flex items-center gap-x-1.5 rounded-full bg-black bg-gradient-to-r px-2.5 py-1.5 text-xs font-medium text-white hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
             >
               Contact me
@@ -153,7 +153,7 @@
             </li></a
           >
           <!-- Contact -->
-          <a href="https://brandon-gebert.github.io/about-me/dist/contact.html"
+          <a href="https://brandon-gebert.github.io/about-me/contact.html"
             ><li class="text-3xl font-medium text-black dark:text-white">
               Contact
             </li></a
@@ -171,14 +171,15 @@
           <h1
             class="mb-12 text-6xl font-medium text-center text-black dark:text-white"
           >
-            Improving Layout for OpenRouter
+            OpenRouter:<br />Rethinking Navigation and Layout Architecture
           </h1>
           <div class="flex items-center justify-center w-full">
-            <div
-              class="flex items-center justify-center w-32 px-5 py-3 mb-32 text-sm font-medium tracking-tight text-center text-white bg-black rounded-full hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
+            <button
+              class="flex items-center justify-center px-5 py-3 mb-32 text-sm font-medium tracking-tight text-center text-white rounded-full bg-gradient-to-r from-purple-500 to-blue-500"
+              onclick="window.location.href='https://kzmqv2dgi5qvi92n7u4i.lite.vusercontent.net/';"
             >
-              Coming soon
-            </div>
+              View Case Study
+            </button>
           </div>
           <div
             class="mb-12 flex h-[16rem] w-full flex-col items-center justify-center gap-y-8 rounded-xl bg-white sm:h-[24rem] sm:max-w-[68rem] lg:h-[28rem] 2xl:h-[32rem] dark:bg-zinc-900"
@@ -186,42 +187,285 @@
             <img
               src="https://brandon-gebert.github.io/about-me/assets/case-study-1-img-2.png"
               class="object-cover w-full h-full rounded-xl"
+              alt="OpenRouter UI Redesign Screenshot"
             />
           </div>
+
+          <!-- Overview Section -->
           <h2 class="mb-6 text-3xl font-semibold text-black dark:text-white">
-            Introduction
+            Overview
           </h2>
           <p class="mb-16 text-black dark:text-white">
-            As someone who works at Ferguson Enterprises in the Sales Department
-            and encounters these challenges firsthand, I’ve seen how easily
-            customers can become frustrated when searching for home improvement
-            products. On Build.com, one of our key platforms, even the most
-            resourceful individuals—be they DIY enthusiasts or industry
-            professionals—can find themselves overwhelmed and unsure of where to
-            start. The current search experience, while powerful in theory,
-            often relies on technical filters, complicated keywords, and
-            guesswork. This complexity prevents customers from feeling
-            confident, inspired, and ready to move forward with their projects.
-            <br /><br />I'll be making a case study outlines my effort to
-            transform the Build.com search tool into a user-friendly,
-            conversational experience powered by advanced AI and Large Language
-            Models (LLMs). Rather than expecting users to navigate a maze of
-            product listings, filters, and jargon, I want them to simply
-            describe what they need—just as they would when talking to an
-            in-store expert—and let the system handle the rest. By streamlining
-            the search process, I aim to not only improve the user experience
-            and make product discovery more intuitive, but also help Build.com
-            continue to thrive as a trusted source for all home improvement
-            needs.
+            This case study examines a comprehensive redesign of OpenRouter's
+            user interface architecture, focusing specifically on the
+            fundamental layout system and navigation paradigm. Rather than
+            altering individual features or functionality, the redesign
+            introduces a cohesive, consistent layout framework that
+            significantly enhances usability, reduces cognitive load, and
+            creates a more intuitive experience. By reimagining how users
+            navigate and interact with the application's structure, this
+            redesign demonstrates how thoughtful layout architecture can
+            transform a technical product without changing its core
+            capabilities.
           </p>
+
+          <!-- Background Section -->
+          <h2 class="mb-6 text-3xl font-semibold text-black dark:text-white">
+            Background
+          </h2>
+          <p class="mb-16 text-black dark:text-white">
+            OpenRouter provides a unified API that gives developers access to
+            hundreds of AI models through a single endpoint. The platform serves
+            as a critical infrastructure layer for AI development, requiring an
+            interface that balances technical complexity with usability. The
+            original interface, while functional, presented opportunities for
+            improvement in its fundamental layout and navigation approach.
+          </p>
+
           <div
             class="mb-12 flex h-[16rem] w-full flex-col items-center justify-center gap-y-8 rounded-xl bg-white sm:h-[24rem] sm:max-w-[68rem] lg:h-[28rem] 2xl:h-[32rem] dark:bg-zinc-900"
           >
             <img
               src="https://brandon-gebert.github.io/about-me/assets/case-study-1-img-1.png"
               class="object-cover w-full h-full rounded-xl"
+              alt="OpenRouter UI Redesign Process"
             />
           </div>
+
+          <!-- Problem Section -->
+          <h2 class="mb-6 text-3xl font-semibold text-black dark:text-white">
+            Problem
+          </h2>
+          <p class="mb-16 text-black dark:text-white">
+            The current OpenRouter interface suffers from inconsistent layout
+            patterns across different sections of the application. The
+            navigation varies between pages, requiring users to adapt to
+            different interaction models as they move through the workflow. The
+            content organization lacks a unified structural framework, creating
+            a disjointed experience that increases cognitive load. Different
+            sections of the application feel isolated rather than parts of a
+            cohesive whole. This inconsistency makes the platform more
+            challenging to learn and use efficiently, particularly for new
+            users.
+            <br /><br />
+            The original design employs various layout approaches, including
+            centered content areas, multi-column layouts, and different
+            navigation positions depending on the context. This inconsistency
+            forces users to reorient themselves when switching between sections,
+            slowing productivity and creating unnecessary friction. The lack of
+            a persistent navigation framework makes it difficult for users to
+            build an accurate mental model of the application's structure.
+          </p>
+
+          <!-- Redesign Approach Section -->
+          <h2 class="mb-6 text-3xl font-semibold text-black dark:text-white">
+            Redesign Approach: Unified Layout Architecture
+          </h2>
+          <p class="mb-16 text-black dark:text-white">
+            The redesign strategy focused on creating a consistent, unified
+            layout architecture that would serve as the foundation for all
+            sections of the application. Rather than addressing individual
+            features, the approach reimagined the fundamental navigation and
+            spatial organization of the interface. This layout-first methodology
+            ensures that users experience a consistent interaction model
+            regardless of which part of the application they're using.
+            <br /><br />
+            The centerpiece of the redesign is a persistent sidebar navigation
+            system that provides consistent access to all major sections while
+            maintaining contextual awareness. This approach transforms
+            OpenRouter from a collection of related pages into a cohesive
+            application with a predictable structure. The sidebar serves as both
+            a navigational element and a contextual container that adapts to the
+            current section without changing its fundamental position or
+            behavior.
+          </p>
+
+          <!-- Detailed Analysis Section -->
+          <h2 class="mb-6 text-3xl font-semibold text-black dark:text-white">
+            Detailed Analysis of Layout Architecture
+          </h2>
+
+          <!-- Consistent Sidebar-Based Navigation -->
+          <h3 class="mb-4 text-2xl font-medium text-black dark:text-white">
+            Consistent Sidebar-Based Navigation
+          </h3>
+          <p class="mb-12 text-black dark:text-white">
+            The most significant architectural change in the redesign is the
+            implementation of a persistent sidebar navigation system across all
+            sections of the application. The original OpenRouter design used
+            different navigation approaches for different contexts—horizontal
+            tabs in some areas, dropdown menus in others, and multi-column
+            layouts in the documentation. This inconsistency required users to
+            reorient themselves when moving between sections.
+            <br /><br />
+            The redesigned layout unifies the navigation experience with a
+            consistent sidebar that maintains its position and behavior
+            throughout the application. This sidebar serves as the primary
+            navigation framework while adapting its content contextually based
+            on the current section. In the chat interface, it displays
+            conversation history; in the models view, it contains filtering
+            options; in the documentation, it shows content categories. This
+            consistency creates a predictable spatial framework that
+            significantly reduces cognitive load.
+            <br /><br />
+            The sidebar implementation also allows for better space utilization
+            across different screen sizes. By establishing a consistent
+            container for navigation and secondary controls, the redesign
+            creates a layout that can adapt to different viewport dimensions
+            without compromising usability. This approach addresses the
+            challenges of responsive design while maintaining a consistent user
+            experience.
+          </p>
+
+          <!-- Modal Context Windows vs. Page Transitions -->
+          <h3 class="mb-4 text-2xl font-medium text-black dark:text-white">
+            Modal Context Windows vs. Page Transitions
+          </h3>
+          <p class="mb-12 text-black dark:text-white">
+            The original OpenRouter design relied heavily on page transitions
+            when moving between different functional areas, creating a
+            disjointed experience that interrupted user workflow. The redesign
+            introduces a modal context system that allows certain functions—like
+            search and user settings—to appear as focused overlays without
+            disrupting the underlying layout architecture.
+            <br /><br />
+            This modal approach maintains contextual awareness by keeping the
+            primary navigation visible while focusing attention on the immediate
+            task. The search experience, for example, transforms from a dropdown
+            overlay into a centered modal dialog that provides clear visual
+            hierarchy without losing the user's place in the application. This
+            pattern creates a more fluid experience by reducing the perception
+            of context switching between different application areas.
+          </p>
+
+          <!-- Spatial Consistency and Visual Rhythm -->
+          <h3 class="mb-4 text-2xl font-medium text-black dark:text-white">
+            Spatial Consistency and Visual Rhythm
+          </h3>
+          <p class="mb-12 text-black dark:text-white">
+            The redesigned layout establishes a consistent spatial framework
+            that creates visual rhythm throughout the application. Key
+            interactive elements maintain consistent positioning relative to the
+            sidebar, creating predictable interaction zones that users can learn
+            once and apply throughout their experience. This spatial consistency
+            extends to the positioning of primary actions, filter controls, and
+            content areas.
+            <br /><br />
+            In the original design, each section employed different spacing,
+            alignment, and proportional relationships between elements. The
+            redesign establishes a unified spatial system that maintains
+            consistent proportional relationships between navigation, content,
+            and functional controls. This approach creates a more harmonious
+            visual experience while reinforcing the user's mental model of the
+            application structure.
+            <br /><br />
+            The redesigned search modal, for example, maintains alignment with
+            the sidebar while creating a focused overlay experience. Similarly,
+            the user settings panel extends from the consistent sidebar
+            framework rather than appearing as a disconnected dropdown. This
+            spatial consistency reinforces the application's structure while
+            reducing the cognitive effort required to locate and interact with
+            different functional areas.
+          </p>
+
+          <!-- Hierarchical Information Architecture -->
+          <h3 class="mb-4 text-2xl font-medium text-black dark:text-white">
+            Hierarchical Information Architecture
+          </h3>
+          <p class="mb-12 text-black dark:text-white">
+            Beyond the visual layout, the redesign implements a more consistent
+            hierarchical information architecture that organizes content into
+            clearly defined levels. The sidebar establishes the primary
+            navigation level, with secondary navigation appearing within
+            contextually appropriate containers. This hierarchical organization
+            extends to modals and panels that maintain consistent levels of
+            information importance regardless of their specific content.
+            <br /><br />
+            In the documentation section, for example, the redesign organizes
+            content into logical groupings with clear parent-child
+            relationships. This hierarchical approach helps users build an
+            accurate mental model of the content structure, making it easier to
+            locate specific information. Similar hierarchical organization
+            appears in the models browser and chat interfaces, creating a
+            consistent pattern for information discovery throughout the
+            application.
+          </p>
+
+          <div
+            class="mb-12 flex h-[16rem] w-full flex-col items-center justify-center gap-y-8 rounded-xl bg-white sm:h-[24rem] sm:max-w-[68rem] lg:h-[28rem] 2xl:h-[32rem] dark:bg-zinc-900"
+          >
+            <img
+              src="https://brandon-gebert.github.io/about-me/assets/case-study-1-img-4.png"
+              class="object-cover w-full h-full rounded-xl"
+              alt="OpenRouter UI Redesign Screenshot"
+            />
+          </div>
+
+          <!-- Impact Section -->
+          <h2 class="mb-6 text-3xl font-semibold text-black dark:text-white">
+            Impact of Layout Architecture Redesign
+          </h2>
+          <p class="mb-16 text-black dark:text-white">
+            The unified layout architecture offers several significant
+            improvements to the OpenRouter user experience:
+            <br /><br />
+            The consistent sidebar-based navigation creates a predictable
+            spatial framework that remains stable as users move through
+            different parts of the application. This stability significantly
+            reduces cognitive load by eliminating the need to reorient to
+            different navigation patterns. The modal context system maintains
+            the user's awareness of their location within the application
+            structure while focusing attention on immediate tasks. This approach
+            reduces the disruptive effect of context switching while preserving
+            the structural consistency of the interface.
+            <br /><br />
+            The unified spatial system creates visual rhythm that reinforces the
+            user's understanding of the application architecture. By maintaining
+            consistent proportional relationships between elements, the redesign
+            creates an interface that feels cohesive and intentional. The
+            hierarchical information architecture organizes content into clearly
+            defined levels that remain consistent across different sections,
+            making it easier for users to build an accurate mental model of the
+            application.
+            <br /><br />
+            Perhaps most importantly, the redesign achieves these improvements
+            without altering the core functionality of OpenRouter. Users
+            familiar with the original interface will still find all the
+            capabilities they expect, but within a more coherent, predictable
+            framework. This balance between maintaining functionality and
+            improving usability represents the ideal approach to evolving
+            technical products.
+          </p>
+
+          <!-- Conclusion Section -->
+          <h2 class="mb-6 text-3xl font-semibold text-black dark:text-white">
+            Conclusion
+          </h2>
+          <p class="mb-16 text-black dark:text-white">
+            This case study demonstrates how a layout-first approach to
+            interface redesign can significantly improve usability without
+            requiring changes to core functionality. By establishing a
+            consistent navigation framework, unified spatial system, and
+            coherent information hierarchy, the OpenRouter redesign transforms a
+            collection of related pages into a cohesive application with a
+            predictable structure.
+            <br /><br />
+            The redesign illustrates the fundamental importance of layout
+            architecture in creating effective interfaces for technical
+            products. Even the most powerful functionality becomes more
+            accessible when presented within a consistent, intuitive framework
+            that aligns with users' mental models. This layout-focused approach
+            creates a foundation that can accommodate future feature additions
+            while maintaining a coherent user experience.
+            <br /><br />
+            The OpenRouter redesign serves as a compelling example of how
+            thoughtful layout architecture can transform a technical product
+            without compromising its capabilities. By focusing on the
+            fundamental patterns of navigation and spatial organization, the
+            redesign creates a more intuitive, efficient experience that better
+            serves both new and experienced users while maintaining the powerful
+            functionality that makes OpenRouter valuable.
+          </p>
         </section>
         <!-- End of Case Study 1 Section -->
       </main>
@@ -235,7 +479,7 @@
           class="flex h-full w-full flex-col items-start justify-between gap-y-6 sm:max-w-[68rem] sm:flex-row sm:items-center"
         >
           <a
-            href="https://brandon-gebert.github.io/about-me/dist/index.html"
+            href="https://brandon-gebert.github.io/about-me/index.html"
             class="flex items-center justify-start w-full"
           >
             <p class="text-sm text-black dark:text-white">
@@ -307,7 +551,7 @@
             <!-- Contact -->
             <a
               rel="noopener noreferrer"
-              href="https://brandon-gebert.github.io/about-me/dist/contact.html"
+              href="https://brandon-gebert.github.io/about-me/contact.html"
             >
               <svg
                 class="text-black size-5 dark:text-white"
