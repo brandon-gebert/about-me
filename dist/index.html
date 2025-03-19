@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="font-inter bg-zinc-100 dark:bg-zinc-950">
+<html class="bg-zinc-100 font-inter dark:bg-zinc-950">
   <head>
     <title>Brandon Gebert - Welcome</title>
     <meta charset="UTF-8" />
@@ -7,8 +7,8 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
 
-  <body class="h-screen w-full">
-    <div class="h-full w-full">
+  <body class="w-full h-screen">
+    <div class="w-full h-full">
       <!-- Start of Desktop Navigation Bar -->
       <nav
         class="desktop-navbar fixed z-10 flex h-[3.125rem] w-full items-center justify-center bg-zinc-100 dark:bg-zinc-950"
@@ -28,7 +28,7 @@
             </p>
           </a>
           <ul
-            class="hidden flex-row items-center justify-center gap-x-10 md:flex"
+            class="flex-row items-center justify-center hidden gap-x-10 md:flex"
           >
             <!-- GitHub -->
             <a href="https://github.com/brandon-gebert" target="_blank"
@@ -68,7 +68,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-6 text-black dark:text-white"
+                class="text-black size-6 dark:text-white"
               >
                 <path
                   stroke-linecap="round"
@@ -78,7 +78,7 @@
               </svg>
             </button>
           </div>
-          <div class="hidden items-center md:flex">
+          <div class="items-center hidden md:flex">
             <button
               onclick="window.location.href='https://brandon-gebert.github.io/about-me/dist/contact.html';"
               class="inline-flex items-center gap-x-1.5 rounded-full bg-black bg-gradient-to-r px-2.5 py-1.5 text-xs font-medium text-white hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
@@ -92,7 +92,7 @@
       <!-- ***** -->
       <!-- Start of Mobile Navigation Bar (Opened) -->
       <nav
-        class="mobile-navbar fixed z-20 hidden h-full w-full flex-col items-start bg-zinc-100 px-5 lg:hidden dark:bg-zinc-950"
+        class="fixed z-20 flex-col items-start hidden w-full h-full px-5 mobile-navbar bg-zinc-100 lg:hidden dark:bg-zinc-950"
       >
         <div
           class="flex h-[3.125rem] w-full flex-row items-center justify-between"
@@ -118,7 +118,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-6 text-black dark:text-white"
+              class="text-black size-6 dark:text-white"
             >
               <path
                 stroke-linecap="round"
@@ -129,7 +129,7 @@
           </button>
         </div>
         <!-- Navigation Links -->
-        <ul class="my-12 flex flex-col items-start justify-center gap-y-8">
+        <ul class="flex flex-col items-start justify-center my-12 gap-y-8">
           <!-- GitHub -->
           <a href="https://github.com/brandon-gebert" target="_blank"
             ><li class="text-3xl font-medium text-black dark:text-white">
@@ -170,20 +170,20 @@
         >
           <img
             src="https://github.com/brandon-gebert/about-me/blob/main/assets/profile-picture.JPG?raw=true"
-            class="size-24 rounded-full object-cover"
+            class="object-cover rounded-full size-24"
           />
           <h1
-            class="w-full text-center text-4xl font-medium text-black sm:w-4/6 dark:text-white"
+            class="w-full text-4xl font-medium text-center text-black sm:w-4/6 dark:text-white"
           >
             Making beautiful things for the web
           </h1>
           <p
-            class="text-normal w-full text-center text-black sm:w-4/6 dark:text-white"
+            class="w-full text-center text-black text-normal sm:w-4/6 dark:text-white"
           >
-            I’m an aspiring front-end developer passionate about creating
-            intuitive and appealing user experiences. Based in Fort Myers, FL;
-            I’m honing my skills in HTML, CSS, JavaScript, and React as I go on
-            my web development journey.
+            I’m an aspiring Product Designer passionate about creating intuitive
+            and appealing user experiences. Based in Fort Myers, FL; I’m honing
+            my skills in HTML, CSS, JavaScript, and React as I go on my product
+            design & web development journey.
           </p>
         </section>
         <!-- End of Hero Section -->
@@ -193,10 +193,10 @@
           id="skills-section"
           class="my-12 flex h-[20rem] w-full shrink-0 grow-0 items-center justify-center sm:h-[20rem] sm:max-w-[68rem] xl:h-[24rem] xl:px-0 2xl:h-[28rem]"
         >
-          <div class="flex h-full w-full flex-col gap-x-4">
+          <div class="flex flex-col w-full h-full gap-x-4">
             <!-- Carousel Header -->
             <div
-              class="mb-10 flex h-10 w-full flex-row items-center justify-between"
+              class="flex flex-row items-center justify-between w-full h-10 mb-10"
             >
               <h1
                 class="text-2xl font-medium tracking-tight text-black dark:text-white"
@@ -204,7 +204,7 @@
                 Skills
               </h1>
               <div
-                class="hidden flex-row items-center justify-center gap-x-4 sm:hidden md:flex"
+                class="flex-row items-center justify-center hidden gap-x-4 sm:hidden md:flex"
               >
                 <!-- Carousel Scroll Up (Right) Button -->
                 <button>
@@ -214,7 +214,7 @@
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="scroll-up-button size-6 text-black dark:text-white"
+                    class="text-black scroll-up-button size-6 dark:text-white"
                   >
                     <path
                       stroke-linecap="round"
@@ -231,7 +231,7 @@
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="scroll-down-button size-6 text-black dark:text-white"
+                    class="text-black scroll-down-button size-6 dark:text-white"
                   >
                     <path
                       stroke-linecap="round"
@@ -244,7 +244,7 @@
             </div>
             <!-- Carousel Body -->
             <div
-              class="hide-scrollbar flex h-full w-full shrink-0 grow-0 flex-row gap-x-5 overflow-x-scroll"
+              class="flex flex-row w-full h-full overflow-x-scroll hide-scrollbar shrink-0 grow-0 gap-x-5"
             >
               <!-- HTML -->
               <div
@@ -285,7 +285,7 @@
                 class="flex h-full w-[286px] shrink-0 grow-0 flex-col items-center justify-center rounded-lg bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] sm:w-[286px] md:w-[calc(33.333%-1rem)]"
               >
                 <svg
-                  class="size-24 text-white"
+                  class="text-white size-24"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -330,9 +330,9 @@
           id="case-study-section"
           class="my-24 flex h-[24rem] w-full shrink-0 grow-0 items-center justify-center sm:max-w-[68rem] xl:px-0 2xl:h-[32rem]"
         >
-          <div class="flex h-full w-full flex-col gap-x-4">
+          <div class="flex flex-col w-full h-full gap-x-4">
             <div
-              class="mb-10 flex h-10 w-full flex-row items-center justify-between"
+              class="flex flex-row items-center justify-between w-full h-10 mb-10"
             >
               <h1
                 class="text-2xl font-medium tracking-tight text-black dark:text-white"
@@ -341,20 +341,20 @@
               </h1>
             </div>
             <div
-              class="hide-scrollbar flex h-full w-full shrink-0 grow-0 flex-row gap-x-5 overflow-x-scroll"
+              class="flex flex-row w-full h-full overflow-x-scroll hide-scrollbar shrink-0 grow-0 gap-x-5"
             >
               <div
-                class="flex h-full w-full shrink-0 grow-0 flex-col items-center justify-center gap-y-8 rounded-lg bg-[#1daea4] p-5"
+                class="flex flex-col items-center justify-center w-full h-full p-5 bg-indigo-600 rounded-lg shrink-0 grow-0 gap-y-8"
               >
                 <h1
-                  class="w-full text-center text-4xl text-white sm:w-4/6 sm:text-6xl"
+                  class="w-full text-4xl text-center text-white sm:w-4/6 sm:text-6xl"
                 >
-                  Improving Search with Build.com
+                  Improving layout for OpenRouter
                 </h1>
                 <!-- Link to Case Study #1 -->
                 <button
                   onclick="window.location.href='https://brandon-gebert.github.io/about-me/dist/case-study-1.html'"
-                  class="flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-medium tracking-tight text-black hover:bg-zinc-200"
+                  class="flex items-center justify-center px-5 py-3 text-sm font-medium tracking-tight text-black bg-white rounded-full hover:bg-zinc-200"
                 >
                   Learn more
                 </button>
@@ -370,14 +370,14 @@
           class="my-12 flex h-[24rem] w-full flex-col items-center justify-center gap-y-8 rounded-xl bg-white p-10 sm:max-w-[68rem] 2xl:h-[32rem] dark:bg-zinc-900"
         >
           <h1
-            class="w-full text-center text-4xl text-black sm:w-4/6 sm:text-6xl dark:text-white"
+            class="w-full text-4xl text-center text-black sm:w-4/6 sm:text-6xl dark:text-white"
           >
             My professional history
           </h1>
           <!-- Link to Resume -->
           <button
             onclick="window.open('https://brandon-gebert.github.io/about-me/assets/GebertBrandon_Resume.pdf', '_blank')"
-            class="flex items-center justify-center rounded-full bg-black px-5 py-3 text-sm font-medium tracking-tight text-white hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
+            class="flex items-center justify-center px-5 py-3 text-sm font-medium tracking-tight text-white bg-black rounded-full hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
           >
             View resume
           </button>
@@ -395,7 +395,7 @@
         >
           <a
             href="https://brandon-gebert.github.io/about-me/dist/index.html"
-            class="flex w-full items-center justify-start"
+            class="flex items-center justify-start w-full"
           >
             <p class="text-sm text-black dark:text-white">
               © 2024 Brandon Gebert. All Rights Reserved.
@@ -409,7 +409,7 @@
               href="https://github.com/brandon-gebert"
             >
               <svg
-                class="size-6 text-black dark:text-white"
+                class="text-black size-6 dark:text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -429,7 +429,7 @@
               href="https://www.linkedin.com/in/brandon-gebert-887378342/"
             >
               <svg
-                class="size-6 text-black dark:text-white"
+                class="text-black size-6 dark:text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -450,7 +450,7 @@
               href="https://brandon-gebert.github.io/about-me/assets/GebertBrandon_Resume.pdf"
             >
               <svg
-                class="size-5 text-black dark:text-white"
+                class="text-black size-5 dark:text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -469,7 +469,7 @@
               href="https://brandon-gebert.github.io/about-me/dist/contact.html"
             >
               <svg
-                class="size-5 text-black dark:text-white"
+                class="text-black size-5 dark:text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"

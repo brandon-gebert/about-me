@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="font-inter bg-zinc-100 dark:bg-zinc-950">
+<html class="bg-zinc-100 font-inter dark:bg-zinc-950">
   <head>
     <title>Case Study #1 - Build.com</title>
     <meta charset="UTF-8" />
@@ -7,8 +7,8 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
 
-  <body class="h-screen w-full">
-    <div class="h-full w-full">
+  <body class="w-full h-screen">
+    <div class="w-full h-full">
       <!-- Start of Desktop Navigation Bar -->
       <nav
         class="fixed z-10 flex h-[3.125rem] w-full items-center justify-center bg-zinc-100 dark:bg-zinc-950"
@@ -28,7 +28,7 @@
             </p>
           </a>
           <ul
-            class="hidden flex-row items-center justify-center gap-x-10 md:flex"
+            class="flex-row items-center justify-center hidden gap-x-10 md:flex"
           >
             <!-- GitHub -->
             <a href="https://github.com/brandon-gebert" target="_blank"
@@ -68,7 +68,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-6 text-black dark:text-white"
+                class="text-black size-6 dark:text-white"
               >
                 <path
                   stroke-linecap="round"
@@ -78,7 +78,7 @@
               </svg>
             </button>
           </div>
-          <div class="hidden items-center md:flex">
+          <div class="items-center hidden md:flex">
             <button
               onclick="window.location.href='https://brandon-gebert.github.io/about-me/dist/contact.html';"
               class="inline-flex items-center gap-x-1.5 rounded-full bg-black bg-gradient-to-r px-2.5 py-1.5 text-xs font-medium text-white hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
@@ -92,7 +92,7 @@
       <!-- ***** -->
       <!-- Start of Mobile Navigation Bar (Opened) -->
       <nav
-        class="mobile-navbar fixed z-20 hidden h-full w-full flex-col items-start bg-zinc-100 px-5 lg:hidden dark:bg-zinc-950"
+        class="fixed z-20 flex-col items-start hidden w-full h-full px-5 mobile-navbar bg-zinc-100 lg:hidden dark:bg-zinc-950"
       >
         <div
           class="flex h-[3.125rem] w-full flex-row items-center justify-between"
@@ -118,7 +118,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-6 text-black dark:text-white"
+              class="text-black size-6 dark:text-white"
             >
               <path
                 stroke-linecap="round"
@@ -129,7 +129,7 @@
           </button>
         </div>
         <!-- Navigation Links -->
-        <ul class="my-12 flex flex-col items-start justify-center gap-y-8">
+        <ul class="flex flex-col items-start justify-center my-12 gap-y-8">
           <!-- GitHub -->
           <a href="https://github.com/brandon-gebert" target="_blank"
             ><li class="text-3xl font-medium text-black dark:text-white">
@@ -166,16 +166,16 @@
       <main class="flex h-auto w-full flex-col items-center px-5 py-[3.125rem]">
         <!-- Start of Case Study 1 Section -->
         <section
-          class="mx-auto my-32 flex w-full flex-col sm:my-48 sm:w-10/12 lg:w-2/3 2xl:w-1/2"
+          class="flex flex-col w-full mx-auto my-32 sm:my-48 sm:w-10/12 lg:w-2/3 2xl:w-1/2"
         >
           <h1
-            class="mb-12 text-center text-6xl font-medium text-black dark:text-white"
+            class="mb-12 text-6xl font-medium text-center text-black dark:text-white"
           >
-            Improving Search with Build.com
+            Improving Layout for OpenRouter
           </h1>
-          <div class="flex w-full items-center justify-center">
+          <div class="flex items-center justify-center w-full">
             <div
-              class="mb-32 flex w-32 items-center justify-center rounded-full bg-black px-5 py-3 text-center text-sm font-medium tracking-tight text-white hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
+              class="flex items-center justify-center w-32 px-5 py-3 mb-32 text-sm font-medium tracking-tight text-center text-white bg-black rounded-full hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
             >
               Coming soon
             </div>
@@ -185,7 +185,7 @@
           >
             <img
               src="https://brandon-gebert.github.io/about-me/assets/case-study-1-img-2.png"
-              class="h-full w-full rounded-xl object-cover"
+              class="object-cover w-full h-full rounded-xl"
             />
           </div>
           <h2 class="mb-6 text-3xl font-semibold text-black dark:text-white">
@@ -219,7 +219,7 @@
           >
             <img
               src="https://brandon-gebert.github.io/about-me/assets/case-study-1-img-1.png"
-              class="h-full w-full rounded-xl object-cover"
+              class="object-cover w-full h-full rounded-xl"
             />
           </div>
         </section>
@@ -236,7 +236,7 @@
         >
           <a
             href="https://brandon-gebert.github.io/about-me/dist/index.html"
-            class="flex w-full items-center justify-start"
+            class="flex items-center justify-start w-full"
           >
             <p class="text-sm text-black dark:text-white">
               © 2024 Brandon Gebert. All Rights Reserved.
@@ -250,7 +250,7 @@
               href="https://github.com/brandon-gebert"
             >
               <svg
-                class="size-6 text-black dark:text-white"
+                class="text-black size-6 dark:text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -270,7 +270,7 @@
               href="https://www.linkedin.com/in/brandon-gebert-887378342/"
             >
               <svg
-                class="size-6 text-black dark:text-white"
+                class="text-black size-6 dark:text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -291,7 +291,7 @@
               href="https://brandon-gebert.github.io/about-me/assets/GebertBrandon_Resume.pdf"
             >
               <svg
-                class="size-5 text-black dark:text-white"
+                class="text-black size-5 dark:text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -310,7 +310,7 @@
               href="https://brandon-gebert.github.io/about-me/dist/contact.html"
             >
               <svg
-                class="size-5 text-black dark:text-white"
+                class="text-black size-5 dark:text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
