@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="font-inter bg-zinc-100 dark:bg-zinc-950">
+<html class="bg-zinc-100 font-inter dark:bg-zinc-950">
   <head>
     <title>Brandon Gebert - Contact</title>
     <meta charset="UTF-8" />
@@ -7,8 +7,8 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
 
-  <body class="h-screen w-full">
-    <div class="h-full w-full">
+  <body class="w-full h-screen">
+    <div class="w-full h-full">
       <!-- Start of Desktop Navigation Bar -->
       <nav
         class="fixed z-10 flex h-[3.125rem] w-full items-center justify-center bg-zinc-100 dark:bg-zinc-950"
@@ -28,7 +28,7 @@
             </p>
           </a>
           <ul
-            class="hidden flex-row items-center justify-center gap-x-10 md:flex"
+            class="flex-row items-center justify-center hidden gap-x-10 md:flex"
           >
             <!-- GitHub -->
             <a href="https://github.com/brandon-gebert" target="_blank"
@@ -68,7 +68,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-6 text-black dark:text-white"
+                class="text-black size-6 dark:text-white"
               >
                 <path
                   stroke-linecap="round"
@@ -78,7 +78,7 @@
               </svg>
             </button>
           </div>
-          <div class="hidden items-center md:flex">
+          <div class="items-center hidden md:flex">
             <button
               onclick="window.location.href='https://brandon-gebert.github.io/about-me/dist/contact.html';"
               class="inline-flex items-center gap-x-1.5 rounded-full bg-black bg-gradient-to-r px-2.5 py-1.5 text-xs font-medium text-white hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
@@ -92,7 +92,7 @@
       <!-- ***** -->
       <!-- Start of Mobile Navigation Bar (Opened) -->
       <nav
-        class="mobile-navbar fixed z-20 hidden h-full w-full flex-col items-start bg-zinc-100 px-5 lg:hidden dark:bg-zinc-950"
+        class="fixed z-20 flex-col items-start hidden w-full h-full px-5 mobile-navbar bg-zinc-100 lg:hidden dark:bg-zinc-950"
       >
         <div
           class="flex h-[3.125rem] w-full flex-row items-center justify-between"
@@ -118,7 +118,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-6 text-black dark:text-white"
+              class="text-black size-6 dark:text-white"
             >
               <path
                 stroke-linecap="round"
@@ -129,7 +129,7 @@
           </button>
         </div>
         <!-- Navigation Links -->
-        <ul class="my-12 flex flex-col items-start justify-center gap-y-8">
+        <ul class="flex flex-col items-start justify-center my-12 gap-y-8">
           <!-- GitHub -->
           <a href="https://github.com/brandon-gebert" target="_blank"
             ><li class="text-3xl font-medium text-black dark:text-white">
@@ -167,20 +167,20 @@
         <div
           class="isolate bg-zinc-100 py-24 sm:max-w-[68rem] sm:py-32 lg:px-8 dark:bg-zinc-950"
         >
-          <div class="mx-auto max-w-2xl text-center">
+          <div class="max-w-2xl mx-auto text-center">
             <h2
-              class="text-balance text-4xl font-semibold tracking-tight text-black sm:text-5xl dark:text-white"
+              class="text-4xl font-semibold tracking-tight text-black text-balance sm:text-5xl dark:text-white"
             >
               Contact me
             </h2>
-            <p class="mt-6 text-lg/8 text-black dark:text-white">
+            <p class="mt-6 text-black text-lg/8 dark:text-white">
               Have a question or idea? Drop me a message!
             </p>
           </div>
           <form
             action="https://api.web3forms.com/submit"
             method="POST"
-            class="mx-auto mt-16 max-w-xl sm:mt-20"
+            class="max-w-xl mx-auto mt-16 sm:mt-20"
           >
             <input
               type="hidden"
@@ -192,7 +192,7 @@
               <div>
                 <label
                   for="first-name"
-                  class="block text-sm/6 font-semibold text-black dark:text-white"
+                  class="block font-semibold text-black text-sm/6 dark:text-white"
                   >First name</label
                 >
                 <div class="mt-2.5">
@@ -210,7 +210,7 @@
               <div>
                 <label
                   for="last-name"
-                  class="block text-sm/6 font-semibold text-black dark:text-white"
+                  class="block font-semibold text-black text-sm/6 dark:text-white"
                   >Last name (Optional)</label
                 >
                 <div class="mt-2.5">
@@ -227,7 +227,7 @@
               <div class="sm:col-span-2">
                 <label
                   for="email"
-                  class="block text-sm/6 font-semibold text-black dark:text-white"
+                  class="block font-semibold text-black text-sm/6 dark:text-white"
                   >Email</label
                 >
                 <div class="mt-2.5">
@@ -245,7 +245,7 @@
               <div class="sm:col-span-2">
                 <label
                   for="message"
-                  class="block text-sm/6 font-semibold text-black dark:text-white"
+                  class="block font-semibold text-black text-sm/6 dark:text-white"
                   >Message</label
                 >
                 <div class="mt-2.5">
@@ -260,10 +260,10 @@
               </div>
             </div>
             <!-- Submity Contact Form -->
-            <div class="mt-10 flex items-center justify-end">
+            <div class="flex items-center justify-end mt-10">
               <button
                 type="submit"
-                class="block w-auto rounded-full bg-black px-5 py-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
+                class="block w-auto px-5 py-3 text-sm font-semibold text-center text-white bg-black rounded-full shadow-sm hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
               >
                 Let's talk
               </button>
@@ -282,7 +282,7 @@
         >
           <a
             href="https://brandon-gebert.github.io/about-me/dist/index.html"
-            class="flex w-full items-center justify-start"
+            class="flex items-center justify-start w-full"
           >
             <p class="text-sm text-black dark:text-white">
               © 2024 Brandon Gebert. All Rights Reserved.
@@ -296,7 +296,7 @@
               href="https://github.com/brandon-gebert"
             >
               <svg
-                class="size-6 text-black dark:text-white"
+                class="text-black size-6 dark:text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -316,7 +316,7 @@
               href="https://www.linkedin.com/in/brandon-gebert-887378342/"
             >
               <svg
-                class="size-6 text-black dark:text-white"
+                class="text-black size-6 dark:text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -337,7 +337,7 @@
               href="https://brandon-gebert.github.io/about-me/assets/GebertBrandon_Resume.pdf"
             >
               <svg
-                class="size-5 text-black dark:text-white"
+                class="text-black size-5 dark:text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -356,7 +356,7 @@
               href="https://brandon-gebert.github.io/about-me/dist/contact.html"
             >
               <svg
-                class="size-5 text-black dark:text-white"
+                class="text-black size-5 dark:text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
