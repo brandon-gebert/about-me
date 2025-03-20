@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="bg-zinc-100 font-inter dark:bg-zinc-950">
   <head>
-    <title>Case Study - OpenRouter UI Redesign</title>
+    <title>Case Study - OpenRouter</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
@@ -173,31 +173,43 @@
           >
             OpenRouter:<br />Rethinking Navigation and Layout Architecture
           </h1>
-          <div class="flex items-center justify-center w-full">
+          <div class="flex flex-row items-center justify-center w-full gap-x-4">
             <a
               href="https://kzmqv2dgi5qvi92n7u4i.lite.vusercontent.net/"
               target="_blank"
               rel="noopener noreferrer"
               class="flex items-center justify-center px-5 py-3 mb-32 text-sm font-medium tracking-tight text-center text-white rounded-full bg-gradient-to-r from-purple-500 to-blue-500"
             >
-              View Case Study
+              See In Action
+            </a>
+            <a
+              href="https://github.com/brandon-gebert/openrouter-layout"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center justify-center px-5 py-3 mb-32 text-sm font-medium tracking-tight text-white bg-black rounded-full hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
+            >
+              Source Code
             </a>
           </div>
           <div
-            class="mb-12 flex h-[16rem] w-full flex-col items-center justify-center gap-y-8 rounded-xl bg-white sm:h-[24rem] sm:max-w-[68rem] lg:h-[28rem] 2xl:h-[32rem] dark:bg-zinc-900"
+            class="mb-12 flex h-[14rem] w-full flex-col items-center justify-center gap-y-8 bg-white sm:h-[20rem] sm:max-w-[68rem] lg:h-[28rem] 2xl:h-[30rem] dark:bg-zinc-900"
           >
             <img
               src="https://brandon-gebert.github.io/about-me/assets/case-study-1-img-2.png"
-              class="w-full h-full object-fit rounded-xl"
+              class="object-none w-full h-full"
               alt="OpenRouter UI Redesign Screenshot"
             />
           </div>
-
           <!-- Overview Section -->
           <h2 class="mb-6 text-3xl font-semibold text-black dark:text-white">
             Overview
           </h2>
           <p class="mb-16 text-black dark:text-white">
+            <strong>Disclaimer: </strong>This case study is created in good
+            faith as a passionate supporter of OpenRouter and its vision. All
+            designs and code presented herein remain the intellectual property
+            of OpenRouter. If you represent OpenRouter and wish for this content
+            to be removed, please contact me directly.<br /><br />
             This case study examines a comprehensive redesign of OpenRouter's
             user interface architecture, focusing specifically on the
             fundamental layout system and navigation paradigm. Rather than
@@ -208,9 +220,14 @@
             navigate and interact with the application's structure, this
             redesign demonstrates how thoughtful layout architecture can
             transform a technical product without changing its core
-            capabilities.
+            capabilities.<br /><br />This case study assumes OpenRouter features
+            a dedicated landing page that clearly articulates the platform's
+            functionality and capabilities, guiding visitors toward account
+            creation or sign-in. Upon authentication, users are seamlessly
+            directed to a separate domain housing the application interface,
+            creating a distinct separation between marketing content and the
+            operational workspace.
           </p>
-
           <!-- Background Section -->
           <h2 class="mb-6 text-3xl font-semibold text-black dark:text-white">
             Background
@@ -223,17 +240,15 @@
             original interface, while functional, presented opportunities for
             improvement in its fundamental layout and navigation approach.
           </p>
-
           <div
-            class="mb-12 flex h-[16rem] w-full flex-col items-center justify-center gap-y-8 rounded-xl bg-white sm:h-[24rem] sm:max-w-[68rem] lg:h-[28rem] 2xl:h-[32rem] dark:bg-zinc-900"
+            class="mb-12 flex h-[14rem] w-full flex-col items-center justify-center gap-y-8 bg-white sm:h-[20rem] sm:max-w-[68rem] lg:h-[28rem] 2xl:h-[30rem] dark:bg-zinc-900"
           >
             <img
-              src="https://brandon-gebert.github.io/about-me/assets/case-study-1-img-1.png"
-              class="w-full h-full object-fit rounded-xl"
+              src="https://brandon-gebert.github.io/about-me/assets/case-study-1-img-2.png"
+              class="object-none w-full h-full"
               alt="OpenRouter UI Redesign Process"
             />
           </div>
-
           <!-- Problem Section -->
           <h2 class="mb-6 text-3xl font-semibold text-black dark:text-white">
             Problem
@@ -258,7 +273,6 @@
             a persistent navigation framework makes it difficult for users to
             build an accurate mental model of the application's structure.
           </p>
-
           <!-- Redesign Approach Section -->
           <h2 class="mb-6 text-3xl font-semibold text-black dark:text-white">
             Redesign Approach: Unified Layout Architecture
@@ -281,13 +295,24 @@
             current section without changing its fundamental position or
             behavior.
           </p>
-
           <!-- Detailed Analysis Section -->
-          <h2 class="mb-6 text-3xl font-semibold text-black dark:text-white">
+          <h2 class="mb-10 text-3xl font-semibold text-black dark:text-white">
             Detailed Analysis of Layout Architecture
           </h2>
-
           <!-- Consistent Sidebar-Based Navigation -->
+          <div
+            class="mb-6 flex h-[14rem] w-full flex-col items-center justify-center gap-y-8 bg-white sm:h-[20rem] sm:max-w-[68rem] lg:h-[28rem] 2xl:h-[30rem] dark:bg-zinc-900"
+          >
+            <video
+              class="object-none w-full h-full"
+              src="https://brandon-gebert.github.io/about-me/assets/case-study-1-video-1.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+              controls
+            ></video>
+          </div>
           <h3 class="mb-4 text-2xl font-medium text-black dark:text-white">
             Consistent Sidebar-Based Navigation
           </h3>
@@ -318,8 +343,20 @@
             challenges of responsive design while maintaining a consistent user
             experience.
           </p>
-
           <!-- Modal Context Windows vs. Page Transitions -->
+          <div
+            class="mb-6 flex h-[14rem] w-full flex-col items-center justify-center gap-y-8 bg-white sm:h-[20rem] sm:max-w-[68rem] lg:h-[28rem] 2xl:h-[30rem] dark:bg-zinc-900"
+          >
+            <video
+              class="object-none w-full h-full"
+              src="https://brandon-gebert.github.io/about-me/assets/case-study-1-video-2.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+              controls
+            ></video>
+          </div>
           <h3 class="mb-4 text-2xl font-medium text-black dark:text-white">
             Modal Context Windows vs. Page Transitions
           </h3>
@@ -339,8 +376,20 @@
             pattern creates a more fluid experience by reducing the perception
             of context switching between different application areas.
           </p>
-
           <!-- Spatial Consistency and Visual Rhythm -->
+          <div
+            class="mb-6 flex h-[14rem] w-full flex-col items-center justify-center gap-y-8 bg-white sm:h-[20rem] sm:max-w-[68rem] lg:h-[28rem] 2xl:h-[30rem] dark:bg-zinc-900"
+          >
+            <video
+              class="object-none w-full h-full"
+              src="https://brandon-gebert.github.io/about-me/assets/case-study-1-video-3.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+              controls
+            ></video>
+          </div>
           <h3 class="mb-4 text-2xl font-medium text-black dark:text-white">
             Spatial Consistency and Visual Rhythm
           </h3>
@@ -369,8 +418,20 @@
             reducing the cognitive effort required to locate and interact with
             different functional areas.
           </p>
-
           <!-- Hierarchical Information Architecture -->
+          <div
+            class="mb-6 flex h-[14rem] w-full flex-col items-center justify-center gap-y-8 bg-white sm:h-[20rem] sm:max-w-[68rem] lg:h-[28rem] 2xl:h-[30rem] dark:bg-zinc-900"
+          >
+            <video
+              class="object-none w-full h-full"
+              src="https://brandon-gebert.github.io/about-me/assets/case-study-1-video-4.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+              controls
+            ></video>
+          </div>
           <h3 class="mb-4 text-2xl font-medium text-black dark:text-white">
             Hierarchical Information Architecture
           </h3>
@@ -392,17 +453,6 @@
             consistent pattern for information discovery throughout the
             application.
           </p>
-
-          <div
-            class="mb-12 flex h-[16rem] w-full flex-col items-center justify-center gap-y-8 rounded-xl bg-white sm:h-[24rem] sm:max-w-[68rem] lg:h-[28rem] 2xl:h-[32rem] dark:bg-zinc-900"
-          >
-            <img
-              src="https://brandon-gebert.github.io/about-me/assets/case-study-1-img-4.png"
-              class="w-full h-full object-fit rounded-xl"
-              alt="OpenRouter UI Redesign Screenshot"
-            />
-          </div>
-
           <!-- Impact Section -->
           <h2 class="mb-6 text-3xl font-semibold text-black dark:text-white">
             Impact of Layout Architecture Redesign
@@ -438,7 +488,15 @@
             improving usability represents the ideal approach to evolving
             technical products.
           </p>
-
+          <div
+            class="mb-12 flex h-[14rem] w-full flex-col items-center justify-center gap-y-8 bg-white sm:h-[20rem] sm:max-w-[68rem] lg:h-[28rem] 2xl:h-[30rem] dark:bg-zinc-900"
+          >
+            <img
+              src="https://brandon-gebert.github.io/about-me/assets/case-study-1-img-4.png"
+              class="object-none w-full h-full"
+              alt="OpenRouter UI Redesign Screenshot"
+            />
+          </div>
           <!-- Conclusion Section -->
           <h2 class="mb-6 text-3xl font-semibold text-black dark:text-white">
             Conclusion
